@@ -1,0 +1,7 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+* * * * * /usr/bin/php /app/bin/magento cron:run | grep -v Ran jobs by schedule >> /app/var/log/magento.cron.log
+* * * * * /usr/bin/php /app/update/cron.php >> /app/var/log/update.cron.log
+* * * * * /usr/bin/php /app/bin/magento setup:cron:run >> /app/var/log/setup.cron.log
