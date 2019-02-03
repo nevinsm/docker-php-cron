@@ -1,6 +1,6 @@
 # Ubuntu php-fpm
 
-Ubuntu based magento 2 cron for my local web development needs
+Ubuntu based php cron for my local web development needs
 
 ## License
 
